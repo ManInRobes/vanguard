@@ -1,7 +1,16 @@
-/* CSS BY YOUR NAME */
+/* CSS BY Gabriel Holmquist */
 
 /* IMPORTED FONTS*/
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
 /* IMPORT "INTER" FROM GOOGLE FONTS"
+
 
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -63,8 +72,22 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+header{
+    background-color: var(--black);
+    color: var(--blue);
+}
+header h1{
+    font-size: 9rem;
+    position: relative;
+    left: 5rem;
+}
+
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
+body{
+    min-width: 400px;
+    font-family: "Inter", sans-serif;
+}
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
 .container {
@@ -74,7 +97,7 @@ table {
 }
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin Matos on Unsplash) */
- {
+#Innovation_Investment {
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/vanguard-hero.jpg') no-repeat center center/cover;
     height: 80vh;
     display: grid;
@@ -82,13 +105,14 @@ table {
     text-align: center;
     padding: 1rem;
     overflow: hidden;
+    color: var(--white);
 }
 
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
- {
+ h1:before{
     content: "";
-
-    left:-.5rem;
+    position: absolute;
+    left:-3.5rem;
     width: 3.75rem;
     height: 3.75rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
@@ -113,7 +137,7 @@ table {
     background: var(--charcoal);
     border-radius: 10px;
     position: relative;
-    transition: ;
+    transition: 1s;
     height: 0;
 }
 /* THIS ONE IS DONE FOR YOU */
