@@ -14,125 +14,169 @@
     <title>Vanguard | Leading the Future of Success</title>
 <!-- ADD LINK TO YOUR CSS-->
  <link rel="stylesheet" href="styles.css">
+ <script src="dropdown.js"></script>
 </head>
 
 <body>
+    <script src="script.js"></script>
 <!-- WRAP CONTENT IN VALIDATED, SEMANTIC HTML5 (SEE HINTS FOLDER LINKED TO IN THE CANVAS INSTRUCTIONS)-->
  <header>
+    
     <h1>Vanguard</h1>
-        <h2>Main Navigation</h2>
-            <nav>
-            <a >About</a>
-            <a>Services</a>
-            <a>Contact</a>
-            </nav>
-</header>
         
-        <section id="Innovation_Investment">
-            <h2>Innovation & Investment</h2>
+        <div class="nav-container">
+            <div class="dropdown">
+                <button class="dropdown-button">
+                    <svg viewBox="0 0 448 512" width="50" title="bars">
+                        <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+</header>
+        <section id="Innovation_Investment" >
+            <div id="Innovation_Investment_Content" >
+            <h2 class="fade-in-text">Innovation & Investment</h2>
             <p>We empower businesses to lead the future with high-impact strategies, market intelligence, and financial solutions that drive success.</p>
-        <a>Request a Consultation</a>
-        </section>
+        <section class="fade-in-text">
+            <a href="#">Request a Consultation</a></section>
+    </div>    
+    </section>
 
         <section id="Expertise_Edge">
-        <h2>Our Expertise. Your Edge.</h2>
+        <h2 class="fade-in-text">Our Expertise. Your Edge.</h2>
         <p>We redefine success by leveraging AI-driven analytics, market intelligence, and high-yield investment strategies to propel businesses forward. Whether you're looking to scale, optimize, or dominate, our strategic expertise delivers results.'</p>
         </section>
 
         <section id="Offer">
-        <h2>What We Offer</h2>
+        <h2 class="fade-in-text">What We Offer</h2>
 
             <div>
-            <h3>Strategic Growth Consulting</h3>
+            <h3 class="fade-in-text">Strategic Growth Consulting</h3>
             <p>Unlock new revenue streams and optimize market expansion strategies.</p>
             </div>
 
             <div>
-            <h3>High-Impact Investment Solutions</h3>
+            <h3 class="fade-in-text">High-Impact Investment Solutions</h3>
             <p>Maximize returns with data-driven portfolio management.</p>
             </div>
 
             <div>
-            <h3>Business Acceleration & Mergers</h3>
+            <h3 class="fade-in-text">Business Acceleration & Mergers</h3>
             <p>Identify opportunities for rapid growth and high-value acquisitions.</p>
             </div>
 
             <div>
-            <h3>Digital Transformation</h3>
+            <h3 class="fade-in-text">Digital Transformation</h3>
             <p>Stay at the forefront of industry advancements with AI, blockchain, and automation.</p>
             </div>
 
             <div>
-            <h3>Exclusive Executive Advisory Services</h3>
+            <h3 class="fade-in-text">Exclusive Executive Advisory Services</h3>
             <p>Personalized insights and leadership support for C-suite executives and high-net-worth investors.</p>
             </div>
 
             <div>
-            <h3>Corporate Innovation</h3>
+            <h3 class="fade-in-text">Corporate Innovation</h3>
             <p>Strategic implementation of new ideas, technologies, and processes to drive business growth, enhance competitive advantage, and adapt to evolving market demands.</p>
             </div>
         </section>
 
         <section id="Results">
-            <h2>Proven Results</h2>
+            <h2 class="fade-in-text">Proven Results</h2>
             <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
 
                 <h3>Profits</h3>
-                Year
-                Revenue ($M)
-                Growth (%)
 
-                2020
-                $120M
-                30%
+                <div class="profit_grid">
+                    <div class="item">Year</div>
+                    <div class="item">Revenue ($M)</div>
+                    <div class="item">Growth (%)</div>
 
-                2021
-                $180M
-                50%
+                    <div class="item">2020</div>
+                    <div class="item">$120M</div>
+                    <div class="item">30%</div>
 
-                2022
-                $250M
-                70%
+                    <div class="item_alt_color">2021</div>
+                    <div class="item_alt_color">$180M</div>
+                    <div class="item_alt_color">50%</div>
 
-                2023
-                $340M
-                85%
+                    <div class="item">2022</div>
+                    <div class="item">$250M</div>
+                    <div class="item">70%</div>
 
-                2024
-                $420M
-                100%
+                    <div class="item_alt_color">2023</div>
+                    <div class="item_alt_color">$340M</div>
+                    <div class="item_alt_color">85%</div>
+
+                    <div class="item">2024</div>
+                    <div class="item">$420M</div>
+                    <div class="item">100%</div>
+                </div>
+            
         
 
-                <h3>Growth</h3>
+                <h3 class="fade-in-text">Growth</h3>
 <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
-                    <div  id="bar-chart">
+                    <div  id="bar-chart", class="container" style="height: 25rem;">
                         <div class="bar" data-year="2020" style="--height: 30%;"></div>
                         <div class="bar" data-year="2021" style="--height: 50%;"></div>
                         <div class="bar" data-year="2022" style="--height: 70%;"></div>
                         <div class="bar" data-year="2023" style="--height: 85%;"></div>
                         <div class="bar" data-year="2024" style="--height: 100%;"></div>
                     </div>
-        </section>
+                </section>
+        
 
         <section id="Contact">
-        <h2>Contact Us</h2>
-        Want to take your business to the next level? Get in touch with our elite team today.
+        <h2 class="fade-in-text">Contact Us</h2>
+        <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
 
-            Full Name
+        <form action="/action_page.php">
+            
+        
+            
+            <label for="FName" class="left">Full Name</label>
+            <input type="text" id="FName" name="FullName"></br>
 
-            Email Address
+            
+            <label for="email" class="left">Email Address</label>
+            <input type="email" id="email" name="email"></br>
 
-            Company Name
+            
+            <label for="CName" class="left">Company Name</label>
+            <input type="text" id="CName" name="CompanyName"></br>
 
-            Industry
+            
+            <label for="IndName" class="left">Industry</label>
+            <input type="text" id="IndName" name="IndustryName"></br>
 
-            How can we help you?
+            
+            <label for="HelpComment" class="left">How can we help you?</label>
+            <input type="text" id="HelpComment" name="HelpComment"></br>
 
-            Submit
+            <input type="submit" value="Submit" style="
+            display: block;
+            background-color: var(--blue);
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--white);
+            border-radius: 2rem;
+            padding: 3rem;
+            margin: 0 auto;
+            top: 4rem;
+            ">
+        </form>
         </section>
 
         <footer>
-        2025 Vanguard. All rights reserved. 
-        Email: info@vanguard.com 
-        Phone: 480.123.4567
+        <p>2025 Vanguard. All rights reserved. </p><br/>
+        <p>Email: info@vanguard.com </p><br/>
+        <p>Phone: 480.123.4567</p>
         </footer>

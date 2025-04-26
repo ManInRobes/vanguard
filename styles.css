@@ -72,21 +72,273 @@ table {
 }
 
 /* GLOBAL STYLES (MOBILE FIRST (SMALL) */
+body{
+    font-family: "Inter", sans-serif;
+}
 header{
     background-color: var(--black);
     color: var(--blue);
 }
 header h1{
-    font-size: 9rem;
+    font-size: 3rem;
     position: relative;
-    left: 5rem;
+    bottom: -4rem;
+    left: 14rem;
+    font-weight: bold;
 }
+
+/* Needed some help looked into code pen stuff */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-button {
+    background: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-button svg {
+    fill: var(--charcoal);
+}
+
+.dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: -12rem;
+    background-color: var(--black);
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none; /* Initially hidden */
+    min-width: 150px;
+    border-radius: 2rem;
+}
+
+.dropdown:hover .dropdown-menu { /* Show on hover of the dropdown container */
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 4rem;
+    
+}
+
+.dropdown-menu li a:hover {
+    background-color: #ddd;
+}
+
+.nav-container {
+    position: relative;
+    text-align: right;
+    padding: 15px;
+}
+
+.menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+.menu-label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.bar {
+    width: 25rem;
+    height: 4rem;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+    display: block;
+}
+
+.dropdown-nav {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000000;
+    width: 150px;
+    z-index: 1;
+}
+
+.dropdown-nav a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropdown-nav a:hover {
+    background-color: #555;
+}
+
+/* Show the dropdown when the checkbox is checked */
+.menu-toggle:checked ~ .dropdown-nav {
+    display: block;
+}
+#Innovation_Investment_Content h2{
+    font-size: 4.5rem;
+    font-weight: bold;
+    display: block;
+    padding: 3rem;
+}
+#Innovation_Investment_Content p{
+    font-size: 2rem;
+    display: block;
+    bottom: 15em;
+}
+
+#Innovation_Investment a{
+    background-color: var(--blue);
+    position: relative;
+    font-size: 3rem;
+    padding: 2rem;
+    bottom: -6rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    color: var(--white);
+    min-width: 745px;
+}
+#Innovation_Investment a:hover{
+    background-color: var(--red);
+    color: var(--black);
+}
+
+#Expertise_Edge h2{
+    display: block;
+    font-weight: bold;
+    font-size: 3.5rem;
+    padding: 5rem 5rem;
+    margin-left: 5rem;
+}
+#Expertise_Edge p{
+    font-size: 2rem;    
+    padding: 3rem;
+}
+#Offer h2{
+    display: block;
+    font-weight: bold;
+    font-size: 4rem;
+    padding: 5rem 5rem;
+    margin-left: 5rem;
+}
+#Offer div{
+    background-color: var(--blue);
+    padding: 4.5rem;
+    margin: 3rem;
+    border-radius: 3rem;
+}
+#Offer div h3{
+    color: var(--white);
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+#Offer div p{
+    color: var(--white);
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+#Results{
+    background-color: var(--blue);
+    padding: 5rem 0;
+}
+#Results h2{
+    font-size: 4rem;
+    padding: 4rem;
+    font-weight: bold;
+    color: var(--white);
+}
+#Results p{
+    font-size: 1.6rem;
+    color: var(--white);
+    padding: 4rem;
+}
+#Results h3{
+    font-size: 4rem;
+    color: var(--white);
+    font-weight: bold;
+    padding: 4rem;
+}
+.profit_grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    padding: 0 3rem;
+}
+.item_alt_color{
+    background-color: var(--charcoal);
+}
+.item{
+    background: var(--black);
+}
+.profit_grid div{
+    padding: 2rem 1rem;
+    color: var(--white);
+    text-align: center;
+
+}
+#Contact{
+    background-color: var(--black);
+    color: var(--white);
+}
+#Contact h2{
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 4rem;
+}
+#Contact p{
+    font-size: 1.4rem;
+    padding: 2rem 4rem;
+}
+#Contact form{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    
+
+}
+#Contact form input{
+    display: block;
+    width: 90%;
+    font-size: 2rem;
+    padding:2rem ;
+    font-size: 2rem;
+    border: 0.5rem solid;
+    border-color: var(--blue);
+}
+.left{
+    display: block;
+    text-align: left;
+    padding: 3rem;
+}
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 4rem;
+    text-align: center;
+}
+
 
 
 /* MIN-WIDTH OF THE PAGE SHOULD NOT GO BELOW 400PX */
 body{
     min-width: 400px;
-    font-family: "Inter", sans-serif;
 }
 
 /* ADD A DIV WITH THE CLASS OF CONTAINER TO EVERY CONTENT CONTAINER THIS IS ALLOW THE BASE ELEMENTS TO BE 100% WIDTH, BUT CONSTRAIN THE ACTUAL CONTENT TO 90% */
@@ -103,7 +355,7 @@ body{
     display: grid;
     place-items: center;
     text-align: center;
-    padding: 1rem;
+    padding: 5rem;
     overflow: hidden;
     color: var(--white);
 }
@@ -112,9 +364,10 @@ body{
  h1:before{
     content: "";
     position: absolute;
-    left:-3.5rem;
-    width: 3.75rem;
-    height: 3.75rem;
+    top: -1rem;
+    left:-8rem;
+    width: 5rem;
+    height: 5rem;
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
 
 }
@@ -163,23 +416,25 @@ body{
 .bar {
     animation: stepUp 1s ease-in-out forwards;
 }
-
+.fade-in-text {
+    opacity: 0; /* Initially invisible */
+    transform: translateY(-20px); /* Start a bit above its final position */
+    animation: fadeDownIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeDownIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 /* MEDIA QUERIES (MEDIUM) */ 
 
-    #results {
-        grid-template-columns: 1fr 1fr;
-    }
-    .results-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .results-table {
-        width: 50%;
-    }
-    .bar-chart {
-        width: 50%;
-    }
 
 
 /* MEDIA QUERIES (LARGE) */
