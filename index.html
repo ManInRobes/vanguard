@@ -57,6 +57,7 @@
         <section id="Offer">
         <h2 class="fade-in-text">What We Offer</h2>
 
+        <section id="Offer_grid">
             <div>
             <h3 class="fade-in-text">Strategic Growth Consulting</h3>
             <p>Unlock new revenue streams and optimize market expansion strategies.</p>
@@ -87,11 +88,15 @@
             <p>Strategic implementation of new ideas, technologies, and processes to drive business growth, enhance competitive advantage, and adapt to evolving market demands.</p>
             </div>
         </section>
+        </section>
 
         <section id="Results">
+            
             <h2 class="fade-in-text">Proven Results</h2>
             <p>Our data-driven strategies have delivered outstanding ROI, leading to significant revenue growth.</p>
 
+            <section id="Results_grid">
+                <div>
                 <h3>Profits</h3>
 
                 <div class="profit_grid">
@@ -119,9 +124,12 @@
                     <div class="item">$420M</div>
                     <div class="item">100%</div>
                 </div>
+                </div>
+            
             
         
 
+                <div>
                 <h3 class="fade-in-text">Growth</h3>
 <!-- CODE PROVIDED FOR YOU, NOTHING TO DO FOR THE BAR CHART IN THE HTML-->
                     <div  id="bar-chart", class="container" style="height: 25rem;">
@@ -132,35 +140,44 @@
                         <div class="bar" data-year="2024" style="--height: 100%;"></div>
                     </div>
                 </section>
+            </div>
+            </section>
         
 
         <section id="Contact">
         <h2 class="fade-in-text">Contact Us</h2>
         <p>Want to take your business to the next level? Get in touch with our elite team today.</p>
 
-        <form action="/action_page.php">
-            
         
+        <form action="/action_page.php">
+            <section id="Contact_grid">
             
+            <div>
             <label for="FName" class="left">Full Name</label>
             <input type="text" id="FName" name="FullName"></br>
+            </div>
 
-            
+            <div>
             <label for="email" class="left">Email Address</label>
             <input type="email" id="email" name="email"></br>
+            </div>
 
-            
+            <div>
             <label for="CName" class="left">Company Name</label>
             <input type="text" id="CName" name="CompanyName"></br>
+            </div>
 
-            
+            <div>
             <label for="IndName" class="left">Industry</label>
             <input type="text" id="IndName" name="IndustryName"></br>
+            </div>
 
-            
+            <div>
             <label for="HelpComment" class="left">How can we help you?</label>
-            <input type="text" id="HelpComment" name="HelpComment"></br>
+            <textarea name="HelpComment" id="HelpComment"></textarea>
+            </div>
 
+            <div>
             <input type="submit" value="Submit" style="
             display: block;
             background-color: var(--blue);
@@ -168,15 +185,19 @@
             font-weight: bold;
             color: var(--white);
             border-radius: 2rem;
-            padding: 3rem;
-            margin: 0 auto;
-            top: 4rem;
+            padding: 2rem;
+            margin: 1rem auto;
             ">
+            </div>
+
+        </section>
+
         </form>
+        
         </section>
 
         <footer>
         <p>2025 Vanguard. All rights reserved. </p><br/>
-        <p>Email: info@vanguard.com </p><br/>
+        <a href="#">Email: info@vanguard.com </a><br/>
         <p>Phone: 480.123.4567</p>
         </footer>
